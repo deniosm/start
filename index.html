@@ -55,7 +55,7 @@
     <link rel="shortcut icon" href="https://bosniana.org/assets/favicon/favicon.ico">
 
     <style>
-        /*********************
+/*********************
  * Colours
 *********************/
 :root {
@@ -71,12 +71,12 @@
  * Main
 *********************/
 body, * {
-    font-family: "OpenBosniana", "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Ubuntu", "Droid Sans", "Open Sans", Helvetica, sans-serif;
 }
 
 body {
     display: flex;
-    background-image: url('bg.jpg');
+    background-image: url('/favicon/bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -86,6 +86,8 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     overflow: hidden;
+    width:100%
+    
 }
 
 /*********************
@@ -98,8 +100,9 @@ body {
 }
 
 #logo svg {
-    margin:auto 0;
+    margin:auto;    
 }
+
 @media (max-width:820px){#logo svg{width:350px!important
 }}
 /*********************
@@ -174,7 +177,7 @@ body {
 *********************/
 .links {
     height: 60px;
-    margin: 0 0 35px 0;
+    margin: 0 0 50px 0;
     text-align: center;
 }
 
@@ -303,32 +306,6 @@ body {
     transform: scale(1);
     visibility: visible;
 }
-
-/* Items inside dropdown menu */
-.no-js-alert {
-    background: #A80000;
-    color: white;
-    display: flex;
-    padding: 10px;
-    max-width: 250px;
-}
-
-.no-js-alert svg {
-    height: 30px;
-    width: 30px;
-    padding: 2px;
-    vertical-align: middle;
-}
-
-.no-js-alert span {
-    padding: 0 5px;
-    vertical-align: middle;
-}
-
-.no-js-alert svg path {
-    fill: white;
-}
-
 #pref-menu h4 {
     font-weight: normal;
     margin: 10px 0;
