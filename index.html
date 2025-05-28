@@ -4434,7 +4434,18 @@ function setup_appearance() {
     }
 }
 
+document.addEventListener("click", function(event) {
+    var toggle = document.getElementById("pref-menu-toggle");
+    var menu = document.getElementById("pref-menu"); // Adjust this if your menu has a different ID
 
+    // Only proceed if the menu is currently shown
+    if (toggle && toggle.checked) {
+        // If the clicked element is not inside the menu or the toggle button
+        if (!menu.contains(event.target) && event.target.id !== "pref-menu-toggle") {
+            toggle.checked = false; // Close the menu
+        }
+    }
+});
 /*********************
  * On page load
 *********************/
